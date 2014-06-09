@@ -6,7 +6,7 @@
 
     <LineView
         android:id="@+id/lineView1"
-        android:layout_width="218dp"
-        android:layout_height="256dp" />
+        android:layout_width="wrap_content"
+        android:layout_height="122dp" />
 
 </LinearLayout>
