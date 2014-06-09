@@ -4,9 +4,11 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <LineView
-        android:id="@+id/lineView1"
-        android:layout_width="wrap_content"
-        android:layout_height="122dp" />
+    
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" ></HorizontalScrollView>
 
 </LinearLayout>
