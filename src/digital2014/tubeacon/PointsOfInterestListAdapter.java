@@ -39,22 +39,18 @@ public class PointsOfInterestListAdapter extends BaseAdapter {
 		poiList.remove(poi);
 	}
 	
-	@Override
 	public int getCount() {
 		return poiList.size();
 	}
 	
-	@Override
 	public Object getItem(int position) {
 		return poiList.get(position);
 	}
 	
-	@Override
 	public long getItemId(int position) {
 		return position;	
 	}
 	
-	@Override
 	public View getView(int position, View view, ViewGroup viewGroup) {
 		
 		view = inflater.inflate(R.layout.poi_list_item, null);

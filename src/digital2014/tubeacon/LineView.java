@@ -9,7 +9,7 @@ import android.view.View;
 
 public class LineView extends View {
 	
-	private String stationName = null;
+	private String stationName = "";
 	
 	private int height;
 	private int width;
@@ -47,7 +47,6 @@ public class LineView extends View {
 		this.colour = colour;
 	}
 	
-	@Override
 	protected void onDraw(Canvas canvas) {
 		
 		float radius;
@@ -69,6 +68,9 @@ public class LineView extends View {
 		canvas.drawCircle(this.width/2, this.height/2, radius/1.2f, p);
 		
 		p.setColor(Color.BLACK);
+		p.setStrokeWidth(1);
+		p.setTextSize(20);
+		canvas.drawText(this.stationName, this.height/2, this.width/4, p);
 		
 	}
 	
