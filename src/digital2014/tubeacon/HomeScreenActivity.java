@@ -15,9 +15,6 @@ import android.widget.Spinner;
 
 public class HomeScreenActivity extends Activity {
 
-	private RouteItem currentLocation;
-	private LinearLayout ll;
-	private ArrayList<RouteItem> route;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
