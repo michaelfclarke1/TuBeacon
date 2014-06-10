@@ -3,6 +3,8 @@ package digital2014.tubeacon.nav;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import digital2014.tubeacon.PointOfInterest;
+
 import uk.ac.aber.saw.hackutils.DataNotFoundException;
 import uk.ac.aber.saw.hackutils.SAWDatabaseHelper;
 
@@ -47,6 +49,13 @@ public class Graph {
 					graph.put(v.getHash(), v);
 					allVertex.add(v);
 					useful.put(vertexIds.get(i), v);
+					
+					ArrayList<String> pois = sdh.getStringArrayWithQuery("poi", "title", "id=?", id);
+					ArrayList<PointOfInterest> pointsOfInterest = new ArrayList<PointOfInterest>();
+					for (int j =0; j < pois.size(); j++) {
+						pointsOfInterest.add(new PointOfInterest(pois.get(j)));
+					}
+					v.setPointsOfInterest(pointsOfInterest);
 					
 				} catch (DataNotFoundException e) {
 					e.printStackTrace();

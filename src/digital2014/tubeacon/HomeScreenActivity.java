@@ -72,6 +72,7 @@ public class HomeScreenActivity extends Activity implements IBeaconConsumer {
 					for (int i = 0 ; i < navSteps.size(); i++) {
 						NavigationStep ns = navSteps.get(i);
 						RouteItem ri = new RouteItem(ns.getUUID(), ns.getMajor(), ns.getMinor(), ns.getName());
+						ri.addPointsOfInterest(ns.getVertex().getPointsOfInterest());
 						journey.add(ri);
 					}
 				

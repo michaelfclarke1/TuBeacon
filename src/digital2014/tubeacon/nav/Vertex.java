@@ -2,6 +2,8 @@ package digital2014.tubeacon.nav;
 
 import java.util.ArrayList;
 
+import digital2014.tubeacon.PointOfInterest;
+
 public class Vertex {
 
 	private String uuid;
@@ -10,6 +12,7 @@ public class Vertex {
 	private String friendlyName;
 	private ArrayList<Edge> edgesOut;
 	private int distance;
+	private ArrayList<PointOfInterest> pois;
 	private Vertex previous;
 	
 	public Vertex(String uuid, int major, int minor, String friendlyName) {
@@ -58,6 +61,14 @@ public class Vertex {
 	
 	public ArrayList<Edge> getEdgesOut() {
 		return this.edgesOut;
+	}
+	
+	public ArrayList<PointOfInterest> getPointsOfInterest() {
+		return this.pois;
+	}
+	
+	public void setPointsOfInterest(ArrayList<PointOfInterest> pois) {
+		this.pois = pois;
 	}
 	
 	/**

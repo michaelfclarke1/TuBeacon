@@ -24,4 +24,8 @@ public class NavigationStep {
 		return this.vertex.getFriendlyName();
 	}
 	
+	public Vertex getVertex() {
+		return this.vertex;
+	}
+	
 }

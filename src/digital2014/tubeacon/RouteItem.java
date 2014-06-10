@@ -27,6 +27,10 @@ public class RouteItem {
 		}
 	}
 	
+	public void addPointsOfInterest(ArrayList<PointOfInterest> pois) {
+		this.poiList = pois;
+	}
+	
 	public ArrayList<PointOfInterest> getPointsOfInterest() {
 		return this.poiList;
 	}
