@@ -43,7 +43,6 @@ public final class R {
         public static final int radio1=0x7f090005;
         public static final int radio3=0x7f090006;
         public static final int spinner1=0x7f090003;
-        public static final int textView1=0x7f09000b;
     }
     public static final class layout {
         public static final int activity_home_screen=0x7f030000;
@@ -57,6 +56,7 @@ public final class R {
         public static final int home_screen=0x7f080000;
     }
     public static final class string {
+        public static final int PadStat=0x7f050007;
         public static final int action_settings=0x7f050003;
         public static final int app_name=0x7f050000;
         public static final int destination=0x7f050004;

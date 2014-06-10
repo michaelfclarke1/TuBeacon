@@ -15,5 +15,6 @@
         <item >Kings Cross</item>
         <item >Marble Arch</item>
     </string-array>
+        <string name="PadStat">Paddington Station</string>
 
 </resources>
