@@ -1,5 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
     <string name="app_name">TuBeacon</string>
+    <string name="title_activity_home_screen">HomeScreen</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="destination">Please enter a destination.</string>
+    <string name="ox">Oxford Circus</string>
+    <string name="pad">Paddington</string>
+    <string-array name="Stations">
+        <item >Paddington</item>
+        <item >Oxford Circus</item>
+        <item >Epping</item>
+        <item >Kings Cross</item>
+        <item >Marble Arch</item>
+    </string-array>
 
 </resources>
