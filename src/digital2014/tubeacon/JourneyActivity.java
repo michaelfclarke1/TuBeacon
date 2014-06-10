@@ -3,8 +3,11 @@ package digital2014.tubeacon;
 import java.util.ArrayList;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.Window;
 import android.widget.HorizontalScrollView;
 import android.widget.LinearLayout;
@@ -70,6 +73,16 @@ public class JourneyActivity extends Activity {
 		
 		for (int i = 0; i < route.size(); i++) {
 			lv = new LineView(this);
+			
+		    lv.setOnClickListener(new OnClickListener(){
+
+				@Override
+				public void onClick(View arg0) {
+					
+					Intent i = new Intent(getApplicationContext(), POIActivity.class);
+					startActivity(i);
+					
+				}});
 			
 			if (route.get(i).equals(currentLocation)) {
 				lv.setColour(Color.DKGRAY);
