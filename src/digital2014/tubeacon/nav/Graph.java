@@ -53,7 +53,9 @@ public class Graph {
 					ArrayList<String> pois = sdh.getStringArrayWithQuery("poi", "title", "id=?", id);
 					ArrayList<PointOfInterest> pointsOfInterest = new ArrayList<PointOfInterest>();
 					for (int j =0; j < pois.size(); j++) {
-						pointsOfInterest.add(new PointOfInterest(pois.get(j)));
+						pointsOfInterest.add(new PointOfInterest(pois.get(j),
+								sdh.getStringWithQuery("poi", "description", "id=? AND title=?", 
+										new String[] { id[0], pois.get(j) })));
 					}
 					v.setPointsOfInterest(pointsOfInterest);
 					

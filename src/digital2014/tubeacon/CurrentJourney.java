@@ -9,4 +9,6 @@ public class CurrentJourney {
 	static public ArrayList<RouteItem> journey;
 	static public RouteItem location;
 	static public Graph g;
+	
+	static public PointOfInterest poi;
 }

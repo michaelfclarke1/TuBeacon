@@ -51,6 +51,8 @@ public class JourneyActivity extends Activity{
 			 			@Override
 			 			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
 			 					long arg3) {
+			 				CurrentJourney.poi = 
+			 						(PointOfInterest)arg0.getItemAtPosition(arg2);
 			 				Intent i = new Intent(getApplicationContext(), POIActivity.class);
 			 				startActivity(i);
 			 				
