@@ -37,13 +37,13 @@ public class RouteItem {
 	public int getMinor() { return this.minor; }
 	public String getUUID() { return this.uuid; }
 	
-	public boolean equals(Object o) {
+	/*public boolean equals(Object o) {
 		if (o instanceof RouteItem) {
 			RouteItem r = (RouteItem) o;
 			return (r.getMajor() == this.getMinor() && r.getMinor() == this.getMinor() 
 										&& r.getUUID().equalsIgnoreCase(this.getUUID()));
 		}
 		return false;
-	}
+	}*/
 	
 }

@@ -31,24 +31,9 @@ public class JourneyActivity extends Activity {
 		poiListAdapter = new PointsOfInterestListAdapter(this);
 		poiList.setAdapter(poiListAdapter);
 		
-		RouteItem station1 = new RouteItem("aaa", 1, 2);
-		station1.addPointOfInterest(new PointOfInterest("Church"));
-		station1.addPointOfInterest(new PointOfInterest("Studio"));
-		RouteItem station2 = new RouteItem("aaa", 1, 1);
-		station2.addPointOfInterest(new PointOfInterest("Arrgh"));
-		station2.addPointOfInterest(new PointOfInterest("Noooo"));
-		RouteItem station3 = new RouteItem("aaa", 1, 3);
-		station3.addPointOfInterest(new PointOfInterest("Another Place"));
-		station3.addPointOfInterest(new PointOfInterest("Some Other Place"));
-		
-		ArrayList<RouteItem> list = new ArrayList<RouteItem>();
-		list.add(station1);
-		list.add(station2);
-		list.add(station3);
-		this.setRoute(list);
+		this.setRoute(CurrentJourney.journey);
+		this.setCurrentLocation(CurrentJourney.location);
 	
-		this.setCurrentLocation(station2);
-		
 	}
 	
 	/**
