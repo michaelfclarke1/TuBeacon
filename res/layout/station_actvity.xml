@@ -31,6 +31,13 @@
             android:layout_marginTop="10dp"
             android:src="@drawable/paddington" />
 
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="The station dates from 1854 and was designed by Isambard Kingdom Brunel and is located in Zone 1.\n\n Things to visit nearby:\n\n\n - The Shard\n - Little Venice" />
+
     </LinearLayout>
 
 </FrameLayout>

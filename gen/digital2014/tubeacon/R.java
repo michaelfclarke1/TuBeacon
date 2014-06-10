@@ -45,6 +45,7 @@ public final class R {
         public static final int radio3=0x7f090006;
         public static final int spinner1=0x7f090003;
         public static final int text=0x7f090008;
+        public static final int textView1=0x7f09000e;
         public static final int title=0x7f09000b;
     }
     public static final class layout {
