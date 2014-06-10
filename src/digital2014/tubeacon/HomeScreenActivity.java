@@ -19,6 +19,7 @@ public class HomeScreenActivity extends Activity {
 	private LinearLayout ll;
 	private ArrayList<RouteItem> route;
 	
+	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		
 		super.onCreate(savedInstanceState);

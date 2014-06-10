@@ -47,6 +47,7 @@ public class LineView extends View {
 		this.colour = colour;
 	}
 	
+	@Override
 	protected void onDraw(Canvas canvas) {
 		
 		float radius;

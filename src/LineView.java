@@ -26,6 +26,7 @@ public class LineView extends View {
 		this.stationName = stationName;
 	}
 	
+	@Override
 	protected void onDraw(Canvas canvas) {
 		
 		float radius;

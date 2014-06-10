@@ -18,6 +18,7 @@ public class JourneyActivity extends Activity {
 	private PointsOfInterestListAdapter poiListAdapter;
 	private ListView poiList;
 	
+	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		
 		super.onCreate(savedInstanceState);
