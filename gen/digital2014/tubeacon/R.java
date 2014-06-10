@@ -27,8 +27,9 @@ public final class R {
     public static final class drawable {
         public static final int appicon=0x7f020000;
         public static final int ic_launcher=0x7f020001;
-        public static final int tubeacon=0x7f020002;
-        public static final int tubebecon_trans=0x7f020003;
+        public static final int paddington=0x7f020002;
+        public static final int tubeacon=0x7f020003;
+        public static final int tubebecon_trans=0x7f020004;
     }
     public static final class id {
         public static final int button1=0x7f090007;
@@ -42,6 +43,7 @@ public final class R {
         public static final int radio1=0x7f090005;
         public static final int radio3=0x7f090006;
         public static final int spinner1=0x7f090003;
+        public static final int textView1=0x7f09000b;
     }
     public static final class layout {
         public static final int activity_home_screen=0x7f030000;
