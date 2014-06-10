@@ -49,6 +49,7 @@ public final class R {
         public static final int journey_screen=0x7f030002;
         public static final int poi_actvity=0x7f030003;
         public static final int poi_list_item=0x7f030004;
+        public static final int station_actvity=0x7f030005;
     }
     public static final class menu {
         public static final int home_screen=0x7f080000;

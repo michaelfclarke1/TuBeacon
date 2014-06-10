@@ -9,6 +9,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.Window;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.HorizontalScrollView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
@@ -36,6 +38,16 @@ public class JourneyActivity extends Activity {
 		
 		poiListAdapter = new PointsOfInterestListAdapter(this);
 		poiList.setAdapter(poiListAdapter);
+		
+		poiList.setOnItemClickListener(new OnItemClickListener(){
+
+			@Override
+			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
+					long arg3) {
+				Intent i = new Intent(getApplicationContext(), POIActivity.class);
+				startActivity(i);
+				
+			}});
 		
 		this.setRoute(CurrentJourney.journey);
 		this.setCurrentLocation(CurrentJourney.location);
@@ -79,7 +91,7 @@ public class JourneyActivity extends Activity {
 				@Override
 				public void onClick(View arg0) {
 					
-					Intent i = new Intent(getApplicationContext(), POIActivity.class);
+					Intent i = new Intent(getApplicationContext(), StationActivity.class);
 					startActivity(i);
 					
 				}});

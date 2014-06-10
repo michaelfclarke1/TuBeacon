@@ -17,6 +17,8 @@
         </activity>
 		<activity android:name="digital2014.tubeacon.POIActivity" >
         </activity>
+        <activity android:name="digital2014.tubeacon.StationActivity" >
+        </activity>
         
         
         
